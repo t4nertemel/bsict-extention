@@ -29,7 +29,7 @@
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php plugin_dir_path(__DIR__); ?>wp-content/plugins/SICT-Extended/assets/images/sict-logo.png);
+            background-image: url(<?php plugin_dir_path(__DIR__); ?>wp-content/plugins/bsict-extention/assets/images/sict-logo.png);
 		height:90px;
 		width:250px;
 		background-size: 250px 90px;
