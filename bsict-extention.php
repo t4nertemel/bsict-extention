@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://www.linkedin.com/in/taner-temel-ba7b9844
- * @since             0.0.3
+ * @since             0.0.4
  * @package           Bsict_Extention
  *
  * @wordpress-plugin
  * Plugin Name:       Bolton SICT Extention
  * Plugin URI:        https://www.bolton365.net
  * Description:       Extend Bolton SICT site functionality, do not disable it.
- * Version:           0.0.3
+ * Version:           0.0.4
  * Author:            Taner Temel
  * Author URI:        https://www.linkedin.com/in/taner-temel-ba7b9844
  * License:           GPL-2.0+
@@ -24,7 +24,7 @@
  * Text Domain:       bsict-extention
  * Domain Path:       /languages
  */
-
+/*------------------------------------------------*/
 /* SICT Login Logo */
 function my_login_logo() { ?>
     <style type="text/css">
@@ -50,6 +50,7 @@ function my_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
+/*------------------------------------------------*/
 /* Global dashboard color scheme */
 add_filter( 'get_user_option_admin_color', 'update_user_option_admin_color', 5 );
 function update_user_option_admin_color( $color_scheme ) {
@@ -57,6 +58,7 @@ function update_user_option_admin_color( $color_scheme ) {
     return $color_scheme;
 }
 
+/*------------------------------------------------*/
 /* Login BG Image */
 function login_background_image() {
 echo '<style type="text/css">
@@ -66,7 +68,7 @@ background-image: url( "https://res.cloudinary.com/bolton-schools-ict/image/uplo
 </style>';
 }
 add_action('login_head', 'login_background_image');
-
+/*------------------------------------------------*/
 /* Sender email address */
 function wpb_sender_email( $original_email_address ) {
     return 'theorchardsfederation@bolton.education';
@@ -79,6 +81,7 @@ function wpb_sender_name( $original_email_from ) {
 add_filter( 'wp_mail_from', 'wpb_sender_email' );
 add_filter( 'wp_mail_from_name', 'wpb_sender_name' );
 
+/*------------------------------------------------*/
 /* Cookie Consent Script */
 function cookie_javascript() {
     ?>
@@ -100,3 +103,13 @@ cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palet
     <?php
 }
 add_action('wp_footer', 'cookie_javascript');
+
+/*------------------------------------------------*/
+// Enqueue custom CSS file
+function sictext_enqueue_styles() {
+    wp_enqueue_style( 'sictext-custom-styles', plugins_url( '/css/custom-styles.css', __FILE__ ), array(), '1.0' );
+}
+
+// Hook the function to the wp_enqueue_scripts action hook
+add_action( 'wp_enqueue_scripts', 'sictext_enqueue_styles' );
+?>
