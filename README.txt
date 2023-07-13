@@ -92,9 +92,11 @@ plugins where more information needs to be conveyed that doesn't fit into the ca
 
 Ordered list:
 
-1. Some feature
-1. Another feature
-1. Something else about the plugin
+1. Logo in logo and link
+2. Global dashboard colour
+3. Login background image
+4. WordPress sender email address.
+5. Cookie Confirm.
 
 Unordered list:
 
