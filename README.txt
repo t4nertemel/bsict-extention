@@ -67,9 +67,13 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+= 0.5 =
+* BSICT Custom hover styles.
+* Added custome image hover styles to CSS file.
+
+= 0.4 =
+* Enqued custom style sheets.
+* Added css folder and file to change button colours for cookie confirm.
 
 = 0.3 =
 * Added cookie confirm to plugin (https://www.freeprivacypolicy.com/free-cookie-consent/).
