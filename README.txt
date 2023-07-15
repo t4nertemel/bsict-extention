@@ -67,10 +67,6 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
-= 0.5 =
-* BSICT Custom hover styles.
-* Added custome image hover styles to CSS file.
-
 = 0.4 =
 * Enqued custom style sheets.
 * Added css folder and file to change button colours for cookie confirm.
@@ -96,9 +92,11 @@ plugins where more information needs to be conveyed that doesn't fit into the ca
 
 Ordered list:
 
-1. Some feature
-1. Another feature
-1. Something else about the plugin
+1. Logo in logo and link
+2. Global dashboard colour
+3. Login background image
+4. WordPress sender email address.
+5. Cookie Confirm.
 
 Unordered list:
 
