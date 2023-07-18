@@ -67,6 +67,10 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
+= 0.5 =
+* Image hover styles.
+* Added CSS bsict Custom hover styles to images.
+
 = 0.4 =
 * Enqued custom style sheets.
 * Added css folder and file to change button colours for cookie confirm.

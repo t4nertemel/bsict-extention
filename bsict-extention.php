@@ -16,7 +16,7 @@
  * Plugin Name:       Bolton SICT Extention
  * Plugin URI:        https://www.bolton365.net
  * Description:       Extend Bolton SICT site functionality, do not disable it.
- * Version:           0.0.4
+ * Version:           0.0.5
  * Author:            Taner Temel
  * Author URI:        https://www.linkedin.com/in/taner-temel-ba7b9844
  * License:           GPL-2.0+
