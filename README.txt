@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== BSICT Extention ===
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://www.linkedin.com/in/taner-temel-ba7b9844
 Tags: comments, spam
@@ -69,7 +69,7 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 = 0.5 =
 * Image hover styles.
-* Added CSS bsict Custom hover styles to images.
+* Added bsict custom hover images styles to CSS.
 
 = 0.4 =
 * Enqued custom style sheets.
